@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.JamesSSH.thedigitalcookbook" >
+    package="com.JamesSSH.thedigitalcookbook">
 
     <application
         android:allowBackup="true"
@@ -8,7 +8,10 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.TheDigitalCookbook" >
+        android:theme="@style/Theme.TheDigitalCookbook">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
         <activity
             android:name=".MainScreen"
             android:exported="true"
