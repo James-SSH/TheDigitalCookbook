@@ -12,7 +12,6 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.JamesSSH.thedigitalcookbook.R;
 import com.JamesSSH.thedigitalcookbook.databinding.FragmentHomeBinding;
 
 public class HomeFragment extends Fragment {
@@ -29,12 +28,8 @@ public class HomeFragment extends Fragment {
         View root = binding.getRoot();
 
         final TextView textView = binding.textHome;
-        homeViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
-            }
-        });
+        homeViewModel.getText().observe(getViewLifecycleOwner(),
+                textView::setText);
         return root;
     }
 

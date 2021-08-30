@@ -1,8 +1,8 @@
 package com.JamesSSH.thedigitalcookbook;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class WelcomeScreen extends AppCompatActivity {
 

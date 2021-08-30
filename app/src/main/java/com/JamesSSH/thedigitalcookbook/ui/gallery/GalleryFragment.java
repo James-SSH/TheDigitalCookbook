@@ -12,7 +12,6 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.JamesSSH.thedigitalcookbook.R;
 import com.JamesSSH.thedigitalcookbook.databinding.FragmentGalleryBinding;
 
 public class GalleryFragment extends Fragment {
@@ -29,12 +28,8 @@ public class GalleryFragment extends Fragment {
         View root = binding.getRoot();
 
         final TextView textView = binding.textGallery;
-        galleryViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
-            }
-        });
+        galleryViewModel.getText().observe(getViewLifecycleOwner(),
+                textView::setText);
         return root;
     }
 

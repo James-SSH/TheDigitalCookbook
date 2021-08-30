@@ -3,25 +3,13 @@
     package="com.JamesSSH.thedigitalcookbook">
 
     <application
+        android:fullBackupOnly="true"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TheDigitalCookbook">
-        <activity
-            android:name=".MainActivity"
-            android:exported="true" />
-        <activity
-            android:name=".MainScreen"
-            android:exported="true"
-            android:label="@string/title_activity_main_screen"
-            android:theme="@style/Theme.TheDigitalCookbook.NoActionBar" />
-        <activity
-            android:name=".ui.MainScreen"
-            android:exported="true"
-            android:label="@string/title_activity_main_screen"
-            android:theme="@style/Theme.TheDigitalCookbook.NoActionBar" />
         <activity
             android:name=".WelcomeScreen"
             android:exported="true" />
