@@ -25,9 +25,8 @@
     <Button
         android:id="@+id/button4"
         android:layout_width="128dp"
-        android:layout_height="56dp"
+        android:layout_height="65dp"
         android:text="quit"
         tools:layout_editor_absoluteX="149dp"
-        tools:layout_editor_absoluteY="634dp" />
-
+        tools:layout_editor_absoluteY="630dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
