@@ -6,4 +6,28 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <Button
+        android:id="@+id/button"
+        android:layout_width="147dp"
+        android:layout_height="80dp"
+        android:text="search items"
+        tools:layout_editor_absoluteX="137dp"
+        tools:layout_editor_absoluteY="466dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="128dp"
+        android:layout_height="65dp"
+        android:text="setting"
+        tools:layout_editor_absoluteX="149dp"
+        tools:layout_editor_absoluteY="558dp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="128dp"
+        android:layout_height="56dp"
+        android:text="quit"
+        tools:layout_editor_absoluteX="149dp"
+        tools:layout_editor_absoluteY="634dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
