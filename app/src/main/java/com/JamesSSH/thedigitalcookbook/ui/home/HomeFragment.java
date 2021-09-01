@@ -1,5 +1,6 @@
 package com.JamesSSH.thedigitalcookbook.ui.home;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -28,12 +29,13 @@ public class HomeFragment extends Fragment {
         View root = binding.getRoot();
         button = root.findViewById(R.id.b_Search);
         button.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("InlinedApi")
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getActivity(), Results.class);
                 TextInputEditText tiet = root.findViewById(R.id.et_Search);
                 title = Objects.requireNonNull(tiet.getText()).toString();
-                intent.putExtra(Intent.EXTRA_TITLE, title);
+                intent.putExtra("QUERY BODY", title);
                 startActivity(intent);
             }
         });

@@ -7,19 +7,11 @@
     android:fitsSystemWindows="true"
     tools:context=".Results">
 
-    <EditText
-        android:id="@+id/editTextTextPersonName2"
-        android:layout_width="411dp"
-        android:layout_height="1186dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name" />
-
     <ScrollView
         android:id="@+id/sb_Results"
         android:layout_width="match_parent"
-        android:layout_height="1509dp"
-        android:fillViewport="true"
+        android:layout_height="wrap_content"
+        android:fillViewport="false"
         android:scrollbarStyle="insideOverlay">
 
         <LinearLayout
@@ -45,5 +37,11 @@
         android:textColor="#D0D0D0"
         app:layout_anchor="@+id/app_bar"
         app:layout_anchorGravity="center" />
+
+    <TextView
+        android:id="@+id/t_FinalResults"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:translationY="68dp" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
