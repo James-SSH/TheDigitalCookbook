@@ -16,3 +16,8 @@ opening gradle.build in AndroidStudio
 # Troubleshooting
 check gradle.build file and make sure you have the required dependencies
 check your android version
+
+## Copyright
+google inc
+James-SSH
+233b0
