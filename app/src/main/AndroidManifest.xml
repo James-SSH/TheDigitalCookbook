@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.JamesSSH.thedigitalcookbook">
-<uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:fullBackupOnly="true"
@@ -11,10 +13,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TheDigitalCookbook">
         <activity
+            android:name=".FinalResults"
+            android:exported="true"
+            android:parentActivityName=".AppMain"/>
+        <activity
             android:name=".Results"
             android:exported="true"
-            android:parentActivityName=".AppMain"
             android:label="@string/title_activity_results"
+            android:parentActivityName=".AppMain"
             android:theme="@style/Theme.TheDigitalCookbook.NoActionBar" />
         <activity
             android:name=".AppMain"
@@ -25,6 +31,7 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

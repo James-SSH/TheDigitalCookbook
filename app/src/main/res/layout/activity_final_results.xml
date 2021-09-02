@@ -8,13 +8,11 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.JamesSSH.thedigitalcookbook.Results">
+    tools:context="com.JamesSSH.thedigitalcookbook.FinalResults">
 
     <ListView
-        android:id="@+id/l_ResultsList"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="2dp" />
+        android:id="@+id/android:list"/>
 
 </RelativeLayout>

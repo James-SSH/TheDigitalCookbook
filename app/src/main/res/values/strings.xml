@@ -107,4 +107,6 @@
     <string name="title_Search">Search</string>
     <string name="title_Saved">Saved</string>
     <string name="title_Settings">Settings</string>
+    <string name="bitmap" />
+    <string name="dish_image">Dish_Image</string>
 </resources>
